@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Access</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #22c55e;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ef4444;
+      margin-bottom: 10px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    p {
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    /* TABLE CONTAINER */
+    .table-container {
+      overflow-x: auto;
+      max-width: 95%;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #020617;
+    }
+
+    th {
+      background: #1e293b;
+      color: #38bdf8;
+      padding: 12px;
+      font-weight: 500;
+      border-bottom: 1px solid #334155;
+    }
+
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #1e293b;
+      color: #22c55e;
+    }
+
+    tr:hover {
+      background: rgba(56,189,248,0.1);
+    }
+
+    /* BUTTON */
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 18px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>⚠️ DATABASE ACCESS GRANTED</h2>
+<p>Dumping user records from internal database...</p>
+
+<div class="table-container">
+
+<table>
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Role</th>
+  <th>Password</th>
+  <th>Hash</th>
+  <th>Salary</th>
+  <th>Status</th>
+</tr>
+
+<tr><td>1</td><td>Admin</td><td>admin@company.com</td><td>Super Admin</td><td>admin123</td><td>5f4dcc3b5aa</td><td>$12000</td><td>Active</td></tr>
+<tr><td>2</td><td>User</td><td>user@company.com</td><td>Employee</td><td>user123</td><td>ee11cbb19052</td><td>$4000</td><td>Active</td></tr>
+<tr><td>3</td><td>John</td><td>john@gmail.com</td><td>Manager</td><td>john@123</td><td>a87ff679a2f3</td><td>$8000</td><td>Active</td></tr>
+<tr><td>4</td><td>Alice</td><td>alice@yahoo.com</td><td>HR</td><td>alice@456</td><td>e4da3b7fbbce</td><td>$6500</td><td>Active</td></tr>
+<tr><td>5</td><td>Rahul</td><td>rahul@company.com</td><td>Developer</td><td>rahul@789</td><td>1679091c5a88</td><td>$7000</td><td>Active</td></tr>
+<tr><td>6</td><td>Sneha</td><td>sneha@gmail.com</td><td>Designer</td><td>sneha@111</td><td>8f14e45fceea</td><td>$6000</td><td>Active</td></tr>
+<tr><td>7</td><td>David</td><td>david@mail.com</td><td>Intern</td><td>david@222</td><td>c9f0f895fb98</td><td>$2000</td><td>Inactive</td></tr>
+<tr><td>8</td><td>Priya</td><td>priya@mail.com</td><td>QA</td><td>priya@333</td><td>45c48cce2e2d</td><td>$5000</td><td>Active</td></tr>
+<tr><td>9</td><td>Arjun</td><td>arjun@mail.com</td><td>Support</td><td>arjun@444</td><td>d3d9446802a4</td><td>$4500</td><td>Active</td></tr>
+<tr><td>10</td><td>Meena</td><td>meena@mail.com</td><td>Finance</td><td>meena@555</td><td>6512bd43d9ca</td><td>$7500</td><td>Active</td></tr>
+
+</table>
+
+</div>
+
+<a href="server-files.html">➡️ Explore Server Files</a>
+
+</body>
+</html>

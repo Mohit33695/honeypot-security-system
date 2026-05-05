@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Access Portal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(59,130,246,0.4), transparent);
+      animation: moveGlow 6s infinite alternate;
+      top: -100px;
+      left: -100px;
+    }
+
+    @keyframes moveGlow {
+      from { transform: translate(0,0); }
+      to { transform: translate(200px,200px); }
+    }
+
+    .card {
+      position: relative;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(15px);
+      padding: 35px;
+      border-radius: 15px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: fadeIn 0.8s ease;
+      color: white;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    /* 🔥 ROLE SELECT */
+    .roles {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .role-btn {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: 0.3s;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .role-btn.active {
+      background: #3b82f6;
+      border: none;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      transition: 0.3s;
+    }
+
+    input::placeholder {
+      color: #ccc;
+    }
+
+    input:focus {
+      background: rgba(255,255,255,0.2);
+      box-shadow: 0 0 8px rgba(59,130,246,0.6);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(59,130,246,0.4);
+    }
+
+    .hint {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>🔐 Secure Access</h2>
+
+  <!-- 🔥 ROLE SELECT UI -->
+  <div class="roles">
+    <div class="role-btn active" onclick="selectRole('user', this)">👤 User</div>
+    <div class="role-btn" onclick="selectRole('admin', this)">🛠️ Admin</div>
+  </div>
+
+  <form action="/login" method="POST">
+    <input type="text" id="username" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <div class="hint">Authorized users only</div>
+</div>
+
+<script>
+function selectRole(role, el) {
+  document.querySelectorAll('.role-btn').forEach(btn => btn.classList.remove('active'));
+  el.classList.add('active');
+
+  // 🔥 Auto-fill username (optional but useful)
+  document.getElementById("username").value = role;
+}
+</script>
+
+</body>
+</html>

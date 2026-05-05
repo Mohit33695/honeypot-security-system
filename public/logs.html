@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>access.log</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #020617;
+      color: #22c55e;
+      font-family: 'Fira Code', monospace;
+      padding: 30px;
+    }
+
+    h2 {
+      color: #f87171;
+      margin-bottom: 15px;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .terminal {
+      background: black;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .log {
+      margin: 5px 0;
+    }
+
+    .ip {
+      color: #38bdf8;
+    }
+
+    .success {
+      color: #22c55e;
+    }
+
+    .fail {
+      color: #f59e0b;
+    }
+
+    .attack {
+      color: #ef4444;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background: #22c55e;
+      margin-left: 5px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>📜 Server Access Logs (access.log)</h2>
+
+<div class="terminal">
+
+<div class="log"><span class="ip">192.168.1.10</span> - <span class="success">admin login success</span></div>
+<div class="log"><span class="ip">192.168.1.11</span> - <span class="fail">failed login attempt</span></div>
+<div class="log"><span class="ip">192.168.1.12</span> - <span class="attack">SQL injection detected</span></div>
+<div class="log"><span class="ip">192.168.1.13</span> - <span class="attack">XSS attempt blocked</span></div>
+<div class="log"><span class="ip">192.168.1.14</span> - <span class="fail">multiple login failures</span></div>
+<div class="log"><span class="ip">192.168.1.15</span> - <span class="success">user login success</span></div>
+
+<br>
+
+<div>root@server:/var/log# tail -f access.log<span class="cursor"></span></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Security Monitor</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #ef4444;
+      margin-bottom: 15px;
+    }
+
+    #riskBox {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      animation: fadeIn 0.6s ease;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th {
+      background: #1e293b;
+      color: #38bdf8;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    tr:hover {
+      background: rgba(56,189,248,0.1);
+    }
+
+    .table-container {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    canvas {
+      margin-top: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>🛡️ Security Operations Center</h2>
+<h3>🔴 LIVE ATTACK MONITOR</h3>
+
+<div id="riskBox">Risk Level: LOW</div>
+
+<div class="card">
+  <canvas id="attackChart"></canvas>
+</div>
+
+<div class="card table-container">
+  <table id="logTable">
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Attack Type</th>
+      <th>Time</th>
+    </tr>
+  </table>
+</div>
+
+<script>
+let chart;
+
+async function loadLogs() {
+
+  // 🔥 NEW: Try MySQL first, fallback to JSON (no existing code removed)
+  let logs = [];
+  try {
+    const res = await fetch('/logs-db');
+    logs = await res.json();
+
+    if (!logs || logs.length === 0) throw "Empty DB";
+
+  } catch (e) {
+    const res = await fetch('/logs');
+    logs = await res.json();
+  }
+
+  const table = document.getElementById("logTable");
+
+  table.innerHTML = `
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Attack Type</th>
+      <th>Time</th>
+    </tr>
+  `;
+
+  let stats = {
+    sql_injection: 0,
+    brute_force: 0,
+    xss: 0,
+    suspicious_ip: 0,
+    automation_tool: 0,
+    bot_activity: 0
+  };
+
+  let totalRisk = 0;
+
+  logs.slice().reverse().forEach(log => {
+    const row = table.insertRow();
+
+    row.insertCell(0).innerText = log.username;
+    row.insertCell(1).innerText = log.password;
+    row.insertCell(2).innerText = log.attackType;
+    row.insertCell(3).innerText = log.time;
+
+    if (stats[log.attackType] !== undefined) {
+      stats[log.attackType]++;
+    }
+
+    totalRisk += log.riskScore || 0;
+
+    if (log.attackType === "sql_injection") row.style.backgroundColor = "#7f1d1d";
+    else if (log.attackType === "xss") row.style.backgroundColor = "#78350f";
+    else if (log.attackType === "brute_force") row.style.backgroundColor = "#365314";
+    else if (log.attackType === "suspicious_ip") row.style.backgroundColor = "#581c87";
+  });
+
+  let riskText = "LOW";
+  let color = "#22c55e";
+
+  if (totalRisk > 20) {
+    riskText = "HIGH";
+    color = "#ef4444";
+  } else if (totalRisk > 10) {
+    riskText = "MEDIUM";
+    color = "#f59e0b";
+  }
+
+  const riskBox = document.getElementById("riskBox");
+  riskBox.innerText = "Risk Level: " + riskText;
+  riskBox.style.color = color;
+
+  updateChart(stats);
+}
+
+function updateChart(stats) {
+  const data = {
+    labels: [
+      "SQL Injection",
+      "Brute Force",
+      "XSS",
+      "Suspicious IP",
+      "Automation Tool",
+      "Bot Activity"
+    ],
+    datasets: [{
+      label: "Attack Count",
+      data: [
+        stats.sql_injection,
+        stats.brute_force,
+        stats.xss,
+        stats.suspicious_ip,
+        stats.automation_tool,
+        stats.bot_activity
+      ],
+      backgroundColor: [
+        "#ef4444",
+        "#f59e0b",
+        "#22c55e",
+        "#8b5cf6",
+        "#3b82f6",
+        "#06b6d4"
+      ]
+    }]
+  };
+
+  if (chart) {
+    chart.data = data;
+    chart.update();
+  } else {
+    const ctx = document.getElementById("attackChart").getContext("2d");
+    chart = new Chart(ctx, {
+      type: 'bar',
+      data: data
+    });
+  }
+}
+
+setInterval(loadLogs, 2000);
+loadLogs();
+</script>
+
+</body>
+</html>

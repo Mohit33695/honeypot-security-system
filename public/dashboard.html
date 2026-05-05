@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Portal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: linear-gradient(90deg, #1e293b, #0f172a);
+      color: white;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .navbar div:last-child {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* GRID */
+    .container {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    /* CARD */
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* subtle glow */
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, #3b82f6, #22c55e);
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #475569;
+      margin: 5px 0;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(59,130,246,0.4);
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 15px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">🏢 Employee Portal</div>
+  <div>Welcome, User</div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h3>My Profile</h3>
+    <p>Name: John Doe</p>
+    <p>Role: Software Engineer</p>
+    <p>Department: IT</p>
+  </div>
+
+  <div class="card">
+    <h3>Salary Details</h3>
+    <p>Monthly Salary: $5000</p>
+    <p>Status: Credited</p>
+  </div>
+
+  <div class="card">
+    <h3>Company Documents</h3>
+    <p>Access internal documents</p>
+    <a href="fake-db.html" class="btn">View Records</a>
+  </div>
+
+  <div class="card">
+    <h3>System Files</h3>
+    <p>Internal server data</p>
+    <a href="server-files.html" class="btn">Open Files</a>
+  </div>
+
+  <div class="card">
+    <h3>Notifications</h3>
+    <p>✔ Meeting at 3 PM</p>
+    <p>✔ Salary credited</p>
+  </div>
+
+</div>
+
+</body>
+</html>

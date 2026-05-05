@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>root@server:/var/www/html</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #020617;
+      color: #22c55e;
+      font-family: 'Fira Code', monospace;
+      padding: 25px;
+    }
+
+    .terminal {
+      background: black;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .line {
+      margin: 5px 0;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background: #22c55e;
+      margin-left: 5px;
+      animation: blink 1s infinite;
+    }
+
+    input {
+      background: black;
+      border: none;
+      outline: none;
+      color: #22c55e;
+      font-family: 'Fira Code', monospace;
+      width: 70%;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="terminal" id="terminal">
+
+<div id="output">
+  <div class="line">root@server:/var/www/html# ls -la</div>
+  <div class="line">config.php  access.log  backup.zip</div>
+</div>
+
+<div class="line">
+  <span id="prompt">root@server:/var/www/html# </span>
+  <input id="cmd" autofocus>
+  <span class="cursor"></span>
+</div>
+
+</div>
+
+<script>
+let currentPath = "/var/www/html";
+
+const fileSystem = {
+  "/": ["var", "etc", "home"],
+  "/var": ["www", "log"],
+  "/var/www": ["html"],
+  "/var/www/html": ["config.php", "backup.zip", "access.log"],
+  "/var/log": ["access.log"]
+};
+
+const fileContent = {
+  "config.php": "DB_USER=admin\nDB_PASS=super_secret_123",
+  "access.log": "Login attempt from 192.168.1.10\nSQL Injection detected",
+  "backup.zip": "Encrypted backup file..."
+};
+
+const cmdInput = document.getElementById("cmd");
+const output = document.getElementById("output");
+const prompt = document.getElementById("prompt");
+
+function updatePrompt() {
+  prompt.innerText = "root@server:" + currentPath + "# ";
+}
+
+function listFiles() {
+  return fileSystem[currentPath] ? fileSystem[currentPath].join("  ") : "";
+}
+
+function changeDir(cmd) {
+  if (cmd === "cd ..") {
+    currentPath = currentPath.split("/").slice(0, -1).join("/") || "/";
+    return "";
+  }
+
+  const target = cmd.replace("cd ", "");
+  let newPath = currentPath === "/" ? "/" + target : currentPath + "/" + target;
+
+  if (fileSystem[newPath]) {
+    currentPath = newPath;
+    return "";
+  } else {
+    return "No such directory";
+  }
+}
+
+cmdInput.addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+
+    const command = this.value.trim();
+    output.innerHTML += `<div class="line">${prompt.innerText}${command}</div>`;
+
+    let result = "";
+
+    if (command === "ls") {
+      result = listFiles();
+    }
+
+    else if (command === "pwd") {
+      result = currentPath;
+    }
+
+    else if (command.startsWith("cd ")) {
+      result = changeDir(command);
+      updatePrompt();
+    }
+
+    else if (command.startsWith("cat ")) {
+      const file = command.split(" ")[1];
+      result = fileContent[file] || "File not found";
+    }
+
+    else if (command === "whoami") {
+      result = "root";
+    }
+
+    else if (command === "clear") {
+      output.innerHTML = "";
+    }
+
+    else {
+      result = "command not found";
+    }
+
+    if (result) {
+      output.innerHTML += `<div class="line">${result}</div>`;
+    }
+
+    this.value = "";
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+});
+
+updatePrompt();
+</script>
+
+</body>
+</html>

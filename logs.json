@@ -1,0 +1,1406 @@
+[
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "time": "4/5/2026, 5:19:39 pm"
+  },
+  {
+    "username": "user",
+    "password": "",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:19:56 pm"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "time": "4/5/2026, 5:20:32 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:20:55 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "time": "4/5/2026, 5:21:22 pm"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "time": "4/5/2026, 5:21:46 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:21:58 pm"
+  },
+  {
+    "username": "admin",
+    "password": "2",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:22:04 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "time": "4/5/2026, 5:25:51 pm"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "time": "4/5/2026, 5:27:05 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:27:28 pm"
+  },
+  {
+    "username": "admin",
+    "password": "2",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:27:33 pm"
+  },
+  {
+    "username": "admin",
+    "password": "3",
+    "attackType": "brute_force",
+    "time": "4/5/2026, 5:27:37 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "time": "4/5/2026, 5:30:48 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "4/5/2026, 6:40:58 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "4/5/2026, 6:41:35 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "4/5/2026, 6:41:43 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:48:15 pm"
+  },
+  {
+    "username": "admin",
+    "password": "2",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:48:20 pm"
+  },
+  {
+    "username": "admin",
+    "password": "3",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:48:24 pm"
+  },
+  {
+    "username": "admin",
+    "password": "4",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:48:28 pm"
+  },
+  {
+    "username": "admin",
+    "password": "2",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:49:17 pm"
+  },
+  {
+    "username": "admin",
+    "password": "3",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:49:21 pm"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:55:41 pm"
+  },
+  {
+    "username": "admin",
+    "password": "2",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:55:45 pm"
+  },
+  {
+    "username": "admin",
+    "password": "3",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:55:48 pm"
+  },
+  {
+    "username": "admin",
+    "password": "4",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:55:51 pm"
+  },
+  {
+    "username": "admin",
+    "password": "",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:55:55 pm"
+  },
+  {
+    "username": "user",
+    "password": "122",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:56:09 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:56:13 pm"
+  },
+  {
+    "username": "user",
+    "password": "321",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:56:26 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:59:05 pm"
+  },
+  {
+    "username": "user",
+    "password": "907",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:59:23 pm"
+  },
+  {
+    "username": "user",
+    "password": "879",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:59:33 pm"
+  },
+  {
+    "username": "user",
+    "password": "879",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:59:35 pm"
+  },
+  {
+    "username": "user",
+    "password": "875",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "4/5/2026, 6:59:42 pm"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T13:33:06.787Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T13:33:40.479Z"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T13:34:00.711Z"
+  },
+  {
+    "username": "admin",
+    "password": "12",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T13:34:07.126Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T13:34:11.406Z"
+  },
+  {
+    "username": "admin",
+    "password": "1",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "time": "2026-05-04T13:34:18.863Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "time": "2026-05-04T13:35:43.336Z"
+  },
+  {
+    "username": "admin",
+    "password": "<script>alert('XSS')</script>",
+    "attackType": "xss",
+    "riskScore": 4,
+    "ip": "::1",
+    "time": "2026-05-04T13:38:00.018Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T13:43:11.907Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T17:12:13.034Z"
+  },
+  {
+    "username": "user",
+    "password": "1334",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T17:38:04.428Z"
+  },
+  {
+    "username": "user",
+    "password": "1334",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T17:38:37.696Z"
+  },
+  {
+    "username": "user",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "time": "2026-05-04T17:39:04.600Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "time": "2026-05-04T17:42:53.651Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "time": "2026-05-04T17:56:56.440Z"
+  },
+  {
+    "username": "user",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "time": "2026-05-04T18:01:45.906Z"
+  },
+  {
+    "username": "user",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "time": "2026-05-04T18:02:06.998Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "time": "2026-05-04T18:14:51.122Z"
+  },
+  {
+    "username": "user",
+    "password": "",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "time": "2026-05-04T18:14:59.727Z"
+  },
+  {
+    "username": "admin",
+    "password": "",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "time": "2026-05-04T18:15:11.430Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8115",
+    "time": "2026-05-04T18:18:23.065Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "time": "2026-05-04T18:19:11.172Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "time": "2026-05-04T18:19:41.036Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T18:24:27.910Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T18:43:31.051Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T19:06:09.853Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T19:07:30.674Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:46.946Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:50.896Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:53.304Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:53.462Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:53.614Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:53.757Z"
+  },
+  {
+    "username": "rgsergb",
+    "password": "sgrg",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:12:53.902Z"
+  },
+  {
+    "username": "user",
+    "password": "5654",
+    "attackType": "suspicious_ip",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:37.448Z"
+  },
+  {
+    "username": "user",
+    "password": "5654",
+    "attackType": "suspicious_ip",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:40.961Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "suspicious_ip",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:48.266Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:50.513Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:50.688Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:50.849Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:50.985Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:51.130Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:51.280Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:51.433Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:51.601Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:51.769Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:51.953Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:52.146Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:52.337Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:53.080Z"
+  },
+  {
+    "username": "user",
+    "password": "12365",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:13:53.241Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:14:37.612Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:14:39.987Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:14:40.154Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:14:40.307Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:14:46.115Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "suspicious_ip",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:01.843Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:02.010Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:02.164Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:02.311Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:02.445Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:02.594Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:03.431Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:03.560Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:03.697Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:06.048Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:06.194Z"
+  },
+  {
+    "username": "user",
+    "password": "12345",
+    "attackType": "bot_activity",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:06.357Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "suspicious_ip",
+    "riskScore": 4,
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:15:20.126Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:21:58.339Z"
+  },
+  {
+    "username": "user",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:22:43.815Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:23:03.652Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:28:12.873Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:40:37.276Z"
+  },
+  {
+    "username": "user",
+    "password": "1234",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:40:46.216Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:41:01.360Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T19:41:14.288Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:05:17.388Z"
+  },
+  {
+    "username": "user",
+    "password": "12344",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:05:29.939Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:06:21.449Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:06:30.902Z"
+  },
+  {
+    "username": "admin",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:16:27.958Z"
+  },
+  {
+    "username": "admin",
+    "password": "admin123",
+    "attackType": "suspicious_ip",
+    "riskScore": 4,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:16:37.873Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:20:22.081Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:49:43.135Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T20:50:24.826Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T21:52:33.965Z"
+  },
+  {
+    "username": "user",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:06:19.815Z"
+  },
+  {
+    "username": "admin",
+    "password": "<script>alert(1)</script>",
+    "attackType": "xss",
+    "riskScore": 4,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:09:50.606Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:10:51.300Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:10:57.349Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:11:00.779Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:11:04.106Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T22:12:25.270Z"
+  },
+  {
+    "username": "admin",
+    "password": "test",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "curl/8.12.1",
+    "time": "2026-05-04T22:13:12.466Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T22:14:57.950Z"
+  },
+  {
+    "username": "admin",
+    "password": "' UNION SELECT 1,2,3 --",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-04T22:15:11.845Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:17:02.618Z"
+  },
+  {
+    "username": "admin",
+    "password": "6541",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:17:36.294Z"
+  },
+  {
+    "username": "admin",
+    "password": "6584",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:17:47.845Z"
+  },
+  {
+    "username": "admin",
+    "password": "6584",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:17:51.718Z"
+  },
+  {
+    "username": "admin",
+    "password": "6584",
+    "attackType": "brute_force",
+    "riskScore": 3,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-04T22:17:55.267Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T01:20:04.117Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T01:20:43.707Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T01:22:32.690Z"
+  },
+  {
+    "username": "admin",
+    "password": "' AND SLEEP(5) --",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:25:11.652Z"
+  },
+  {
+    "username": "test",
+    "password": "test",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:25:30.826Z"
+  },
+  {
+    "username": "admin",
+    "password": "' AND SLEEP(5) --",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:25:41.579Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "ip": "::1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:26:17.007Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T01:44:43.557Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:46:04.622Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "LOW",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:50:17.001Z"
+  },
+  {
+    "username": "admin",
+    "password": "'; DROP TABLE users; --",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:53:29.438Z"
+  },
+  {
+    "username": "admin",
+    "password": "'; DROP TABLE users; --",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "LOW",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T01:54:20.554Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "LOW",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T02:05:57.360Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "MEDIUM",
+    "ip": "10.129.46.253",
+    "userAgent": "curl/8.19.0",
+    "time": "2026-05-05T02:08:56.517Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:10:39.968Z"
+  },
+  {
+    "username": "user",
+    "password": "345",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:12:04.098Z"
+  },
+  {
+    "username": "user",
+    "password": "345",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:19:32.246Z"
+  },
+  {
+    "username": "user",
+    "password": "345",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:19:40.624Z"
+  },
+  {
+    "username": "user",
+    "password": "345",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:20:01.681Z"
+  },
+  {
+    "username": "user",
+    "password": "345",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:20:31.707Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "LOW",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T02:53:29.840Z"
+  }
+]
