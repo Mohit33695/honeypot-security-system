@@ -286,6 +286,6 @@ app.get('/stats', (req, res) => {
 // Start server
 app.listen(3000, '0.0.0.0', () => {
   console.log("🚀 Server running on:");
-  console.log("👉 http://localhost:3000");
-  console.log("👉 http://10.129.46.233:3000");
+  console.log("👉 http://localhost:3000/login.html");
+  console.log("👉 http://10.129.46.233:3000/login.html");
 });
