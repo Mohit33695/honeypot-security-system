@@ -70,6 +70,21 @@ function getAIThreatLevel(ip) {
 }
 
 // ===============================
+// 🤖 AI PATTERN DETECTION
+// ===============================
+function detectAIPattern(ip) {
+  const userLogs = logs.filter(log => log.ip === ip);
+  let types = userLogs.map(l => l.attackType);
+
+  if (types.includes("sql_injection")) return "Injection Attack";
+  if (types.includes("automation_tool")) return "Automated Bot";
+  if (types.includes("brute_force")) return "Credential Attack";
+  if (userLogs.length > 10) return "High Frequency Bot";
+
+  return "Normal";
+}
+
+// ===============================
 // 🔐 LOGIN API
 // ===============================
 app.post('/login', (req, res) => {
@@ -137,8 +152,9 @@ app.post('/login', (req, res) => {
     attackType = "suspicious_ip";
   }
 
-  // AI Threat Level
+  // AI Intelligence
   const threatLevel = getAIThreatLevel(ip);
+  const pattern = detectAIPattern(ip);
 
   // ===============================
   // 🔥 LOGGING (JSON + MYSQL)
@@ -149,16 +165,15 @@ app.post('/login', (req, res) => {
     attackType,
     riskScore: getRiskScore(attackType),
     threatLevel,
+    pattern,
     ip,
     userAgent,
     time: new Date().toISOString()
   };
 
-  // JSON log (existing)
   logs.push(logData);
   fs.writeFileSync('logs.json', JSON.stringify(logs, null, 2));
 
-  // 🔥 MySQL log (ADDED)
   db.query(
     "INSERT INTO logs (username, password, attackType, riskScore, ip, userAgent) VALUES (?, ?, ?, ?, ?, ?)",
     [
@@ -179,18 +194,22 @@ app.post('/login', (req, res) => {
   );
 
   // ===============================
+  // 🚨 AI ALERT SYSTEM
+  // ===============================
+  if (threatLevel === "HIGH") {
+    console.log("🚨 AI ALERT: High-risk attacker detected from IP:", ip);
+  }
+
+  // ===============================
   // 🔥 RESPONSES
   // ===============================
-
   const isTerminal =
     userAgent.includes("curl") ||
     userAgent.includes("powershell") ||
     userAgent.includes("python") ||
     userAgent === "";
 
-  // SQL Injection → Fake DB
   if (attackType === "sql_injection") {
-
     if (isTerminal) {
       return res.send(`
 DATABASE DUMP - USERS TABLE
@@ -205,13 +224,10 @@ ID   Name        Email                  Password
 6    Sneha       sneha@gmail.com        sneha@111
 `);
     }
-
     return res.sendFile(path.join(__dirname, 'public', 'fake-db.html'));
   }
 
-  // Bot / automation → fake shell
   if (attackType === "automation_tool" || attackType === "bot_activity") {
-
     if (isTerminal) {
       return res.send(`
 Access Granted...
@@ -224,11 +240,9 @@ config.php
 backup.zip
 `);
     }
-
     return res.sendFile(path.join(__dirname, 'public', 'server-files.html'));
   }
 
-  // Block suspicious behavior
   if (
     attackType === "brute_force" ||
     attackType === "xss" ||
@@ -237,7 +251,6 @@ backup.zip
     return res.sendFile(path.join(__dirname, 'public', 'login.html'));
   }
 
-  // Normal user
   return res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
 });
 
@@ -245,24 +258,17 @@ backup.zip
 // APIs
 // ===============================
 
-// JSON logs (existing)
-app.get('/logs', (req, res) => res.json(logs));
-
-// 🔥 NEW: MySQL logs API
-app.get('/logs-db', (req, res) => {
+// Hybrid logs (DB + fallback)
+app.get('/logs', (req, res) => {
   db.query(
     "SELECT * FROM logs ORDER BY time DESC",
     (err, results) => {
-      if (err) {
-        console.error("❌ DB Fetch Error:", err);
-        return res.json([]);
-      }
+      if (err || !results.length) return res.json(logs);
       res.json(results);
     }
   );
 });
 
-// Stats (existing)
 app.get('/stats', (req, res) => {
   let stats = {
     total: logs.length,
@@ -283,9 +289,22 @@ app.get('/stats', (req, res) => {
   res.json(stats);
 });
 
+// 🔥 ONLY ADDITION (logs-db route)
+app.get('/logs-db', (req, res) => {
+  db.query(
+    "SELECT * FROM logs ORDER BY time DESC",
+    (err, results) => {
+      if (err) {
+        console.error("❌ DB Fetch Error:", err);
+        return res.json([]);
+      }
+      res.json(results);
+    }
+  );
+});
+
 // Start server
 app.listen(3000, '0.0.0.0', () => {
   console.log("🚀 Server running on:");
   console.log("👉 http://localhost:3000/login.html");
-  console.log("👉 http://10.129.46.233:3000/login.html");
 });

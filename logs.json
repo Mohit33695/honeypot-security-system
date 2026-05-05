@@ -1542,5 +1542,137 @@
     "ip": "127.0.0.1",
     "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
     "time": "2026-05-05T04:56:03.482Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:20:32.496Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:30:07.075Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:30:23.717Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:30:35.317Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:30:45.969Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:31:17.042Z"
+  },
+  {
+    "username": "admin",
+    "password": "'; DROP TABLE users; --",
+    "attackType": "automation_tool",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "10.129.46.253",
+    "userAgent": "mozilla/5.0 (windows nt; windows nt 10.0; en-in) windowspowershell/5.1.26100.8115",
+    "time": "2026-05-05T06:33:37.581Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T06:36:19.719Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T06:37:04.214Z"
+  },
+  {
+    "username": "user",
+    "password": "123",
+    "attackType": "normal",
+    "riskScore": 0,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T06:37:21.579Z"
+  },
+  {
+    "username": "admin",
+    "password": "' OR 1=1 --",
+    "attackType": "sql_injection",
+    "riskScore": 5,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T06:40:22.087Z"
+  },
+  {
+    "username": "admin",
+    "password": "<script>alert(1)</script>",
+    "attackType": "xss",
+    "riskScore": 4,
+    "threatLevel": "HIGH",
+    "pattern": "Injection Attack",
+    "ip": "127.0.0.1",
+    "userAgent": "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/147.0.0.0 safari/537.36",
+    "time": "2026-05-05T06:40:52.700Z"
   }
 ]
